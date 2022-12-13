@@ -1,0 +1,33 @@
+.panel-heading {
+    border-bottom: 1px solid gainsboro;
+}
+
+.mb-0 {
+    margin-bottom: unset !important;
+}
+
+.dataTables_length {
+    float: left;
+}
+
+.dataTables_filter {
+    float: right;
+}
+
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    border-top: 1px solid gainsboro !important;
+}
+
+.select2-container .select2-selection--single  {
+    height: 36px !important;
+    padding: 4px !important;
+}
+
+.select2-container .select2-selection--multiple  {
+    height: 36px !important;
+    padding: 1px 4px !important;
+}
+
+.display-none {
+    display: none !important;
+}

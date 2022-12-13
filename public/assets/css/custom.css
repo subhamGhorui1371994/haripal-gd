@@ -1,0 +1,201 @@
+.apply-now-btn {
+    width: auto;
+    padding: 8px;
+}
+
+.header4-area nav#desktop-nav > ul > li > a {
+    padding: 20px 10px;
+    font-size: 13px;
+}
+
+.flex-direction-custom {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 763px) {
+    .footer-area-top {
+        text-align: center !important;
+    }
+
+    .footer-area-top .corporate-address li i {
+        left: unset !important;
+        margin-left: -25px !important;
+    }
+}
+
+.header-top-right h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #001a39;
+}
+
+.header-top-right p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #001a39;
+}
+
+.header4-area .header-top-area .header-top-right ul li {
+    border-right: 2px solid #fdc800;
+}
+
+.header4-area .header-top-area .header-top-right ul li:last-child {
+    border-right: unset;
+}
+
+.header4-area .header-top-area {
+    padding: 10px 0 10px;
+}
+
+.about2-area {
+    padding: 80px 0 20px;
+}
+
+.about-page3-area {
+    padding: 20px 0 80px;
+}
+
+.about-page3-area.infrastructure-page {
+    padding: 80px 0 80px;
+}
+
+.about2-area .about-sub-title, .why-choose-area .about-sub-title {
+    margin-bottom: 20px !important;
+    text-align: justify !important;
+    width: 100%;
+}
+
+.price-table2-area .pricetable-btn {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.price-table2-area .pricetable-btn:hover {
+    color: #002147;
+}
+
+.course-buttons {
+    padding: 0 3rem 0 3rem;
+}
+
+.price-table-box2 ul {
+    margin: 20px;
+}
+
+.inner-page-banner-area {
+    padding: 60px 0 60px;
+}
+
+.map-area .row > * {
+    padding: 0 !important;
+}
+
+.news-page-area .event-inner-area .event-wrapper > li {
+    background: #f5f5f5;
+}
+
+.news-page-area .event-inner-area .event-wrapper > li .event-calender-wrapper {
+    flex: 0.5;
+}
+
+table th, table td {
+    vertical-align: middle;
+}
+
+.footer-area-top {
+    padding: 50px 0 40px;
+}
+
+.footer-area-top .footer-about {
+    margin: 20px 0 20px;
+}
+
+.slider-content .title1 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nivo-directionNav a {
+    top: 41% !important;
+}
+
+.slider1-area .nivo-directionNav a.nivo-prevNav {
+    left: 10px !important;
+}
+
+.slider1-area .nivo-directionNav a.nivo-nextNav {
+    right: 10px !important;
+}
+
+#studentDetails-form .form-control {
+    line-height: 1.9;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.mr-3 {
+    margin-right: .3rem !important;
+}
+
+.mandatory-disclosure hr, .biometric-report-download-row hr {
+    margin: 2rem 0;
+}
+
+.mandatory-disclosure .sidebar h3.sidebar-title {
+    font-size: 18px;
+}
+
+.mandatory-disclosure .sidebar .sidebar-categories {
+    max-height: 220px;
+    overflow: auto;
+}
+
+.biometric-report-download-row ul {
+    display: inline-flex;
+}
+
+.biometric-report-download-row ul li {
+    margin-right: 15px;
+}
+
+.biometric-report-download-row .enroll-btn {
+    padding: 18px;
+}
+
+.inner-page-banner-area {
+    background-size: cover;
+    background-position: bottom;
+}
+
+.students-say-area .profile-img-wrapper a img {
+    width: 92px !important;
+    height: 92px !important;
+}
+
+.news-img-holder img {
+    width: 150px;
+    height: 101px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 5px 10px !important;
+}
+
+label.error {
+    text-transform: none !important;
+}
+
+.lecturers-img-wrapper {
+    border: 1px solid gainsboro;
+    padding: 5px;
+}
+
+.lecturers-img-wrapper img {
+    height: 280px !important;
+}
+
+.nivoSlider img {
+    height: 780px !important;
+}

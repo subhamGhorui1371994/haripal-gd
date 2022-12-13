@@ -1,0 +1,83 @@
+/** jquery validation css start **/
+#errorContainer, #errorContainerModal, .errorContainer {
+    display: none;
+    overflow: auto;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    padding-top: 0;
+    margin: 10px 0;
+    color: black;
+    background-color: #ff6666;
+}
+
+#errorContainer > p, #errorContainerModal > p, .errorContainer > p {
+    color: #ffffff;
+    padding: 10px 0 10px !important;
+    margin: 12px 0 0 !important;
+    font-weight: 600 !important;
+}
+
+#errorContainer > ul, #errorContainerModal > ul, .errorContainer > ul {
+    color: #ffffff;
+    margin-top: 10px !important;
+    /*margin-left: 24px !important;*/
+    list-style: circle !important;
+}
+
+#errorContainer button.close, #errorContainerModal button.close {
+    float: right !important;
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+#errorContainer label, #errorContainerModal label {
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
+label.error {
+    color: #ff0000 !important;
+}
+
+input.error, select.error, .select2.error, .select-2.error, textarea.error {
+    border: 1px solid #ff0000 !important;
+    border-radius: 5px !important;
+}
+
+.select2.error + .select2-container--default {
+    border: 2px solid #cc0000 !important;
+    border-radius: 5px !important;
+}
+
+/** jquery validation css end **/
+
+.hide {
+    display: none;
+}
+
+#valid-msg {
+    color: #00C900;
+}
+
+#error-msg {
+    color: red;
+}
+
+.login-form label.error {
+    color: #ff0000;
+}
+
+#errorContainer .close {
+    color: #ffffff !important;
+}
+
+span.required-fields {
+    color: #ff0000;
+}
+
+span.validation-errors label {
+    width: 100%;
+    font-weight: bold;
+}
