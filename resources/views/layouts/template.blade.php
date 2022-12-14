@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Heritage College of Education (B.Ed & D.El.Ed)">
+    <meta name="description" content="HARIPAL GURUDAYAL INSTITUTION">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="_token" content="{{csrf_token()}}"/>
 
-    <title>{{ config('app.name', 'Heritage College of Education') }}</title>
+    <title>{{ config('app.name', 'Haripal Gurudayal Institution') }}</title>
 
     <link href="{{ URL::asset('assets/img/logo.png') }}" rel="shortcut icon" type="image/x-icon">
 
