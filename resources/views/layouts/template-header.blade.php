@@ -89,7 +89,7 @@
 
                                 <li class="{{Request::segment(1) === 'activities' ? 'active' : ''}}"><a href="{!! url('activities') !!}">Activities</a></li>
                                 <li class="{{Request::segment(1) === 'courses' ? 'active' : ''}}"><a href="{!! url('/courses') !!}">Courses</a></li>
-                                <li class="{{Request::segment(1) === 'biometric' ? 'active' : ''}}"><a href="{!! url('biometric') !!}">Admission</a></li>
+                                <li class="{{Request::segment(1) === 'admission' ? 'active' : ''}}"><a href="{!! url('admission') !!}">Admission</a></li>
 
                                 <li class="{{Request::segment(1) ==='notice' ? 'active' : ''}}"><a href="{!! url('notice') !!}">Notice</a>
                                     <ul><li><a href="{!! url('events') !!}">Event</a></li></ul>
@@ -129,6 +129,11 @@
                                 <li class="{{Request::segment(2) === 'co-curricular' ? 'active' : ''}}"><a href="{!! url('/achievement/co-curricular') !!}"> Co-curricular Achievement </a></li>
                                 <li class="{{Request::segment(2) === 'academic ' ? 'active' : ''}}"><a href="{!! url('/achievement/academic') !!}"> Academic  Achievement </a></li>
                                 <li class="{{Request::segment(1) === 'activities' ? 'active' : ''}}"><a href="{!! url('activities') !!}">Activities</a></li>
+                                <li class="{{Request::segment(1) === 'courses' ? 'active' : ''}}"><a href="{!! url('/courses') !!}">Courses</a></li>
+                                <li class="{{Request::segment(1) === 'admission' ? 'active' : ''}}"><a href="{!! url('admission') !!}#">Admission</a></li>
+                                <li class="{{Request::segment(1) === 'notice' ? 'active' : ''}}"><a href="{!! url('notice') !!}#">Notice</a></li>
+                                <li class="{{Request::segment(1) === 'events' ? 'active' : ''}}"><a href="{!! url('events') !!}#">Event</a></li>
+                                <li class="{{Request::segment(1) === 'contact' ? 'active' : ''}}"><a href="{!! url('contact') !!}">Contact</a></li>
 
                             </ul>
                         </nav>
