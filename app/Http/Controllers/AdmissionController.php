@@ -12,6 +12,6 @@ class AdmissionController extends Controller
     }
     public function index()
     {
-        return view('pages.coming-soon');
+        return view('pages.admission');
     }
 }

@@ -12,10 +12,10 @@ class AchievementController extends Controller
     }
     public function index()
     {
-        return view('pages.coming-soon');
+        return view('pages.co-curricular');
     }
     public function academic()
     {
-        return view('pages.coming-soon');
+        return view('pages.academic');
     }
 }
