@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="HARIPAL GURUDAYAL INSTITUTION">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="_token" content="{{csrf_token()}}"/>
+    <meta name="_token" content="{{ csrf_token() }}" />
 
     <title>{{ config('app.name', 'Haripal Gurudayal Institution') }}</title>
 
@@ -22,97 +23,169 @@
     <link rel="stylesheet" href="{{ URL::asset('assets/css/meanmenu.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/vendor/slider/css/nivo-slider.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ URL::asset('assets/vendor/slider/css/preview.css') }}" type="text/css"
-          media="screen">
+        media="screen">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/hover-min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/reImageGrid.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/custom.css') }}">
 
+    <link href="{{ URL::asset('assets/admin/js/jquery-validation/jquery-validate.css') }}" rel="stylesheet"
+        type="text/css">
+
     <link rel="stylesheet" type="text/css" href="//unpkg.com/notie/dist/notie.min.css">
 
     <script src="{{ URL::asset('assets/js/modernizr-2.8.3.min.js') }}"></script>
 
     <script type="text/javascript">
-
         var base_url = '{!! url('/') !!}';
         var site_logo = '{{ URL::asset('assets/img/logo-primary.png') }}';
-
     </script>
 
 </head>
 
 <body>
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<!-- Add your site or application content here -->
-<!-- Preloader Start Here -->
-<div id="preloader"></div>
-<!-- Preloader End Here -->
+    <!-- Add your site or application content here -->
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
 
-<!-- Main Body Area Start Here -->
-<div id="wrapper">
+    <!-- Main Body Area Start Here -->
+    <div id="wrapper">
 
-    @include('layouts.template-header')
+        @include('layouts.template-header')
 
-    <!-- Page Content Start -->
-    @yield('content')
-    <!-- Page Content End-->
+        <!-- Page Content Start -->
+        @yield('content')
+        <!-- Page Content End-->
 
-    @include('layouts.template-footer')
+        @include('layouts.template-footer')
 
-</div>
-<!-- Main Body Area End Here -->
+    </div>
+    <!-- Main Body Area End Here -->
 
-<!-- jquery-->
-<script src="{{ URL::asset('assets/js/jquery-2.2.4.min.js') }}" type="text/javascript"></script>
-<!-- Plugins js -->
-<script src="{{ URL::asset('assets/js/plugins.js') }}" type="text/javascript"></script>
-<!-- Bootstrap js -->
-<script src="{{ URL::asset('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
-<!-- WOW JS -->
-<script src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
-<!-- Nivo slider js -->
-<script src="{{ URL::asset('assets/vendor/slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
-<script src="{{ URL::asset('assets/vendor/slider/home.js') }}" type="text/javascript"></script>
-<!-- Owl Cauosel JS -->
-<script src="{{ URL::asset('assets/vendor/OwlCarousel/owl.carousel.min.js') }}" type="text/javascript"></script>
-<!-- Meanmenu Js -->
-<script src="{{ URL::asset('assets/js/jquery.meanmenu.min.js') }}" type="text/javascript"></script>
-<!-- Srollup js -->
-<script src="{{ URL::asset('assets/js/jquery.scrollUp.min.js') }}" type="text/javascript"></script>
-<!-- jquery.counterup js -->
-{{--<script src="{{ URL::asset('assets/js/jquery.counterup.min.js') }}"></script>--}}
-<script src="{{ URL::asset('assets/js/waypoints.min.js') }}" type="text/javascript"></script>
-<!-- Countdown js -->
-<script src="{{ URL::asset('assets/js/jquery.countdown.min.js') }}" type="text/javascript"></script>
-<!-- Isotope js -->
-<script src="{{ URL::asset('assets/js/isotope.pkgd.min.js') }}" type="text/javascript"></script>
-<!-- Magic Popup js -->
-<script src="{{ URL::asset('assets/js/jquery.magnific-popup.min.js') }}" type="text/javascript"></script>
-<!-- Gridrotator js -->
-<script src="{{ URL::asset('assets/js/jquery.gridrotator.js') }}" type="text/javascript"></script>
-<!-- Custom Js -->
-<script src="{{ URL::asset('assets/js/main.js') }}" type="text/javascript"></script>
+    <!-- jquery-->
+    <script src="{{ URL::asset('assets/js/jquery-2.2.4.min.js') }}" type="text/javascript"></script>
+    <!-- Plugins js -->
+    <script src="{{ URL::asset('assets/js/plugins.js') }}" type="text/javascript"></script>
+    <!-- Bootstrap js -->
+    <script src="{{ URL::asset('assets/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <!-- WOW JS -->
+    <script src="{{ URL::asset('assets/js/wow.min.js') }}"></script>
+    <!-- Nivo slider js -->
+    <script src="{{ URL::asset('assets/vendor/slider/js/jquery.nivo.slider.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::asset('assets/vendor/slider/home.js') }}" type="text/javascript"></script>
+    <!-- Owl Cauosel JS -->
+    <script src="{{ URL::asset('assets/vendor/OwlCarousel/owl.carousel.min.js') }}" type="text/javascript"></script>
+    <!-- Meanmenu Js -->
+    <script src="{{ URL::asset('assets/js/jquery.meanmenu.min.js') }}" type="text/javascript"></script>
+    <!-- Srollup js -->
+    <script src="{{ URL::asset('assets/js/jquery.scrollUp.min.js') }}" type="text/javascript"></script>
+    <!-- jquery.counterup js -->
+    {{-- <script src="{{ URL::asset('assets/js/jquery.counterup.min.js') }}"></script> --}}
+    <script src="{{ URL::asset('assets/js/waypoints.min.js') }}" type="text/javascript"></script>
+    <!-- Countdown js -->
+    <script src="{{ URL::asset('assets/js/jquery.countdown.min.js') }}" type="text/javascript"></script>
+    <!-- Isotope js -->
+    <script src="{{ URL::asset('assets/js/isotope.pkgd.min.js') }}" type="text/javascript"></script>
+    <!-- Magic Popup js -->
+    <script src="{{ URL::asset('assets/js/jquery.magnific-popup.min.js') }}" type="text/javascript"></script>
+    <!-- Gridrotator js -->
+    <script src="{{ URL::asset('assets/js/jquery.gridrotator.js') }}" type="text/javascript"></script>
+    <!-- Custom Js -->
+    <script src="{{ URL::asset('assets/js/main.js') }}" type="text/javascript"></script>
 
-<script src="//unpkg.com/notie" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/jquery.validate.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/additional-methods.js') }}">
+    </script>
 
-<script type="text/javascript">
-    function showNotification(type, message, timeout = 5) {
-        notie.alert({
-            type: type, // optional, default = 4, enum: [1, 2, 3, 4, 5, 'success', 'warning', 'error', 'info', 'neutral']
-            text: message,
-            time: timeout, // optional, default = 3, minimum = 1,
-            stay: false, // optional, default = false
-            position: 'bottom' // optional, default = 'top', enum: ['top', 'bottom']
-        })
-    }
-</script>
+    <script src="//unpkg.com/notie" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function showNotification(type, message, timeout = 5) {
+            notie.alert({
+                type: type, // optional, default = 4, enum: [1, 2, 3, 4, 5, 'success', 'warning', 'error', 'info', 'neutral']
+                text: message,
+                time: timeout, // optional, default = 3, minimum = 1,
+                stay: false, // optional, default = false
+                position: 'bottom' // optional, default = 'top', enum: ['top', 'bottom']
+            })
+        }
+    </script>
+    <script>
+
+        $(document).ready(function() {
+
+            $('#completeYear').validate({
+                rules: {
+                    name: "required",
+                    phone: {
+                        required: true,
+                        number: true
+                    },
+                    address: "required",
+                    passing_year: "required",
+                    present_profession: "required",
+                },
+                messages: {
+                    name: "Please Enter Your Name",
+
+                    phone: {
+                        required: "Please Enter YOur Phone Number",
+                        number: "Please Enter Valide Number"
+                    },
+                    address: "Address Fild is Requird",
+                    passing_year: "Passing Year Fild is Requird",
+                    present_profession: "Present Profession Fild is Requird",
+                },
+                // submitHandler: function() {
+                //
+                // }
+            })
+
+            $("#completeYear").on('submit', function(e) {
+                e.preventDefault();
+
+                let form_data = $('#completeYear').serializeArray();
+                console.log(form_data);
+
+                $.ajax({
+                    url: "complete-year-form-store",
+                    type: "POST",
+                    data: form_data,
+                    dataType: "json",
+                    beforeSend: function() {
+                        $(".save_btn").addClass("disabled").text("Loding...");
+                    },
+                    success: function(res) {
+
+                        // $(".ajax-res").text("Your form Submit successfully");
+                        $(".save_btn").removeClass("disabled").text("Submit");
+                        // $("#admissionForm")[0].reset();
+                        // alert("Your form Submit successfully");
+                        $('#success').text('Your form Submit successfully');
+                    },
+                });
+            });
+        });
 
 
-@yield('footer_script')
+
+
+        $("#completeYear").on('submit', function(e) {
+            e.preventDefault();
+
+            let form_data = $('#completeYear').serializeArray();
+            console.log(form_data);
+        });
+    </script>
+
+
+    @yield('footer_script')
 
 
 </body>

@@ -37,6 +37,7 @@ use App\Http\Controllers\AboutUsController;
 use App\Http\Controllers\AchievementController;
 use App\Http\Controllers\ActivitiesController;
 use App\Http\Controllers\AdmissionController;
+use App\Http\Controllers\YearCompleteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -157,3 +158,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('save-site-info', [SiteInfoController::class, 'saveSiteInfo']);
     });
 });
+
+
+// ********************************************
+Route::post('/complete-year-form-store', [YearCompleteController::class, 'store']);
