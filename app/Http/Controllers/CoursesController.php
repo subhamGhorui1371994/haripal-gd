@@ -16,10 +16,11 @@ class CoursesController extends Controller
 
     public function index(Request $request)
     {
-        $bedCourseData = Courses::where('course_type', 'bed')->first();
-        $dledCourseData = Courses::where('course_type', 'dled')->first();
+//        $bedCourseData = Courses::where('course_type', 'bed')->first();
+//        $dledCourseData = Courses::where('course_type', 'dled')->first();
 
-        return view('pages.courses', compact('bedCourseData', 'dledCourseData'));
+        //return view('pages.courses', compact('bedCourseData', 'dledCourseData'));
+        return view('pages.new-courses');
     }
 
 }

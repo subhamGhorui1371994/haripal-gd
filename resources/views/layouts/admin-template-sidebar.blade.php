@@ -10,7 +10,7 @@
                     <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
                     <li class="{{Request::segment(2) ==='dashboard' ? 'active' : ''}}"><a href="{!! URL::to('admin/dashboard') !!}"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
                     <li class="{{(Request::segment(2) ==='home-page' || Request::segment(2) ==='home-page-banners') ? 'active' : ''}}"><a href="{!! URL::to('admin/home-page') !!}"><i class="icon-newspaper"></i> <span>Home Page</span></a></li>
-                    <li class="{{Request::segment(2) ==='courses' ? 'active' : ''}}"><a href="{!! URL::to('admin/courses') !!}"><i class="icon-popout"></i> <span>Courses</span></a></li>
+{{--                    <li class="{{Request::segment(2) ==='courses' ? 'active' : ''}}"><a href="{!! URL::to('admin/courses') !!}"><i class="icon-popout"></i> <span>Courses</span></a></li>--}}
                     <li class="{{(Request::segment(2) ==='gallery' || Request::segment(2) ==='gallery-category') ? 'active' : ''}}"><a href="{!! URL::to('admin/gallery') !!}"><i class="icon-versions"></i> <span>Gallery</span></a></li>
                     <li class="{{Request::segment(2) ==='resource-person' ? 'active' : ''}}"><a href="{!! URL::to('admin/resource-person') !!}"><i class="icon-user-tie"></i> <span>Resource Person</span></a></li>
                     <li class="{{Request::segment(2) ==='students' ? 'active' : ''}}"><a href="{!! URL::to('admin/students') !!}"><i class="icon-vcard"></i> <span>Student Portal</span></a></li>

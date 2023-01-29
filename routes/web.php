@@ -82,7 +82,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('home-page-banners/get-list', [HomePageBannerController::class, 'banner_list_ajax']);
         Route::get('home-page-banners/delete/{id}', [HomePageBannerController::class, 'destroy']);
 
-        Route::get('courses', [CoursesAdminController::class, 'index'])->name('courses');
+//        Route::get('courses', [CoursesAdminController::class, 'index'])->name('courses');
         Route::post('save-courses', [CoursesAdminController::class, 'saveCoursesInfo']);
 
         Route::model('gallery', 'App\Models\Gallery');

@@ -22,7 +22,7 @@
 
             <div class="form-group resource-person-course">
                 <label class="control-label text-bold" for="resource_person_type">Course <span class="required-fields">*</span></label>
-                {!! Form::select('course[]',['bed'=>'B. Ed.', 'dled' => 'D. El. Ed.'], json_decode($resourcePerson->course),['id'=>'course', 'class'=>'form-control select-2', 'multiple'=>'multiple', 'required'=>'required', 'data-msg-required'=>'Please select resource person course.'])!!}
+                {!! Form::select('course[]',['secondary'=>'Secondary', 'higherSecondary' => 'Higher Secondary'], json_decode($resourcePerson->course),['id'=>'course', 'class'=>'form-control select-2', 'multiple'=>'multiple', 'required'=>'required', 'data-msg-required'=>'Please select resource person course.'])!!}
                 <span class="validation-errors"></span>
             </div>
 

@@ -24,7 +24,7 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12">
                                     <div class="tab-content">
                                         <div class="tab-pane tab-item animated fadeIn show active" id="menu-4" role="tabpanel" aria-labelledby="menu-4-tab">
-                                            <h3 class="sidebar-title text-uppercase"><a>B. Ed. Teachers</a></h3>
+                                            <h3 class="sidebar-title text-uppercase"><a>Secondary</a></h3>
                                             <div class="table-responsive" style="max-height:626px;overflow:auto;">
                                                 <table class="table table-bordered table-responsive" style="width: 100%;">
                                                     <thead>
@@ -39,8 +39,8 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    @if(!empty($bedTeachingStaff->toArray()))
-                                                        @foreach($bedTeachingStaff as $key => $staff)
+                                                    @if(!empty($secondaryTeachingStaff->toArray()))
+                                                        @foreach($secondaryTeachingStaff as $key => $staff)
                                                             <tr>
                                                                 <th class="text-center">{{($key+1)}}</th>
                                                                 <th class="text-center"><img src="{{ URL::asset(checkAndRenderImage($staff->photo,'assets/img/course/24.jpg')) }}" alt="course" style="width: 100px; height: 100px" class="img-responsive"></th>
@@ -60,7 +60,7 @@
                                                 </table>
                                             </div>
                                             <hr>
-                                            <h3 class="sidebar-title text-uppercase"><a>D. El. Ed. Teachers</a></h3>
+                                            <h3 class="sidebar-title text-uppercase"><a>Higher Secondary</a></h3>
                                             <div class="table-responsive" style="max-height:626px;overflow:auto;">
                                                 <table class="table table-bordered table-responsive" style="width: 100%;">
                                                     <thead>
@@ -75,8 +75,8 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    @if(!empty($dledTeachingStaff->toArray()))
-                                                        @foreach($dledTeachingStaff as $key => $staff)
+                                                    @if(!empty($higherSecondaryTeachingStaff->toArray()))
+                                                        @foreach($higherSecondaryTeachingStaff as $key => $staff)
                                                             <tr>
                                                                 <th class="text-center">{{($key+1)}}</th>
                                                                 <th class="text-center"><img src="{{ URL::asset(checkAndRenderImage($staff->photo,'assets/img/course/24.jpg')) }}" alt="course" style="width: 100px; height: 100px" class="img-responsive"></th>
