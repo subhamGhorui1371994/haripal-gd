@@ -32,6 +32,13 @@ use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ContactController;
 
+
+use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\AchievementController;
+use App\Http\Controllers\ActivitiesController;
+use App\Http\Controllers\AdmissionController;
+use App\Http\Controllers\YearCompleteController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,6 +49,15 @@ use App\Http\Controllers\ContactController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/about-us', [AboutUsController::class, 'index']);
+Route::get('/co-curricular', [AchievementController::class, 'index']);
+Route::get('/academic', [AchievementController::class, 'academic']);
+Route::get('/activities', [ActivitiesController::class, 'index']);
+Route::get('/admission', [AdmissionController::class, 'index']);
+
+
+
+
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('courses', [CoursesController::class, 'index']);
@@ -142,3 +158,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('save-site-info', [SiteInfoController::class, 'saveSiteInfo']);
     });
 });
+
+
+// ********************************************
+Route::post('/complete-year-form-store', [YearCompleteController::class, 'store']);
