@@ -27,6 +27,8 @@ class CreateResourcePeopleTable extends Migration
             $table->text('course')->nullable()->default(null);
             $table->boolean('bed')->default(false);
             $table->boolean('dled')->default(false);
+            $table->boolean('secondary')->default(false);
+            $table->boolean('higherSecondary')->default(false);
             $table->timestamps();
         });
     }

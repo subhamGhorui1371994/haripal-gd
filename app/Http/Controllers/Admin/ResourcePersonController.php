@@ -159,6 +159,8 @@ class ResourcePersonController extends Controller
                 'course' => json_encode($selectedCourses),
                 'bed' => in_array('bed', $selectedCourses),
                 'dled' => in_array('dled', $selectedCourses),
+                'secondary' => in_array('secondary', $selectedCourses),
+                'higherSecondary' => in_array('higherSecondary', $selectedCourses),
             ];
 
             $resourcePersonImage = $request->file('photo');

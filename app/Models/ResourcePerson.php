@@ -26,6 +26,8 @@ class ResourcePerson extends Model
         'salary',
         'bed',
         'dled',
+        'secondary',
+        'higherSecondary'
     ];
 
     protected $primaryKey = 'id';
