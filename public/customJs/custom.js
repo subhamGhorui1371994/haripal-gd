@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('#completeYear').validate({
         rules: {
-            name: 'required',
+            name: "required",
             phone: {
                 required: true,
                 number: true
