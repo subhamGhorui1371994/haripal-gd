@@ -73,6 +73,7 @@ Route::get('notice', [NoticeController::class, 'index']);
 Route::get('events', [EventController::class, 'index']);
 Route::get('contact', [ContactController::class, 'index']);
 Route::post('contact/submit-request', [ContactController::class, 'sendContactMail']);
+Route::post('/ex-student-info-submit', [HomeController::class, 'exStudentInfoSubmit']);
 
 Route::get('admin', [AdminAuthController::class, 'getLogin']);
 

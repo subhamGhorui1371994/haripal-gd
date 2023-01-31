@@ -8,6 +8,7 @@ use App\Models\Event;
 use App\Models\HomePage;
 use App\Models\HomePageBanners;
 use App\Models\Notice;
+use App\Models\YearComplete;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,6 +28,20 @@ class HomeController extends Controller
         $events = Event::limit(10)->orderBy('date', 'desc')->get()->toArray();
 
         return view('pages.welcome', compact('banners', 'pageContent', 'affiliations', 'notices', 'events'));
+    }
+
+    public function exStudentInfoSubmit(Request $request) {
+        $student = new YearComplete();
+
+        $student->name = $request->post('name');
+        $student->phone = $request->post('phone');
+        $student->address = $request->post('address');
+        $student->passing_year = $request->post('passing_year');
+        $student->present_profession = $request->post('present_profession');
+
+
+        $student->save();
+        return response()->json(['status'=> true, 'message'=> "Successfully Submitted."]);
     }
 
 }

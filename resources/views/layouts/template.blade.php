@@ -104,7 +104,7 @@
     </script>
 
     <script src="//unpkg.com/notie" type="text/javascript"></script>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript">
         function showNotification(type, message, timeout = 5) {
             notie.alert({

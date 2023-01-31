@@ -33,22 +33,45 @@ $(document).ready(function() {
         let form_data = $('#completeYear').serializeArray();
         console.log(form_data);
 
-        $.ajax({
-            url: "complete-year-form-store",
-            type: "POST",
-            data: form_data,
-            dataType: "json",
-            beforeSend: function() {
-                $(".save_btn").addClass("disabled").text("Loding...");
-            },
-            success: function(res) {
+        // $.ajax({
+        //     url: "complete-year-form-store",
+        //     type: "POST",
+        //     data: form_data,
+        //     dataType: "json",
+        //     beforeSend: function() {
+        //         $(".save_btn").addClass("disabled").text("Loding...");
+        //     },
+        //     success: function(res) {
+        //
+        //         // $(".ajax-res").text("Your form Submit successfully");
+        //         $(".save_btn").removeClass("disabled").text("Submit");
+        //         // $("#admissionForm")[0].reset();
+        //         // alert("Your form Submit successfully");
+        //         $('#success').text('Your form Submit successfully');
+        //     },
+        // });
+    });
 
-                // $(".ajax-res").text("Your form Submit successfully");
-                $(".save_btn").removeClass("disabled").text("Submit");
-                // $("#admissionForm")[0].reset();
-                // alert("Your form Submit successfully");
-                $('#success').text('Your form Submit successfully');
-            },
+    $('#completeYear').on('submit', function(e) {
+        e.preventDefault();
+        var formData = $('#completeYear').serializeArray();
+        console.log(formData);
+        $.ajax({
+            url: base_url+'/ex-student-info-submit', // URL of the route
+            type: 'POST', // Type of request
+            data: formData, // Data to be sent
+            success: function(data) {
+                // Do something with the returned data
+                $('#exampleModal').modal('hide');
+                if(data.status) {
+                    Swal.fire(
+                        'Good job!',
+                        data.message,
+                        'success'
+                    )
+                    //$('#success').text(data.message);
+                }
+            }
         });
     });
 });
@@ -56,9 +79,4 @@ $(document).ready(function() {
 
 
 
-$('#completeYear').on('submit', function(e) {
-    e.preventDefault();
 
-    var form_data = $('#completeYear').serializeArray();
-    console.log(form_data);
-});
