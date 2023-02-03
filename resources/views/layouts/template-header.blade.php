@@ -198,6 +198,9 @@
                                     <input type="text" placeholder="Name*" class="form-control" name="name"
                                         id="form-name" required data-msg-required="Name field is required">
                                     <span class="validation-errors"></span>
+                                    @error('name')
+                                        <span>Error</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -206,6 +209,9 @@
                                         name="phone" id="form-phone" required
                                         data-msg-required="Phone number field is required">
                                     <span class="validation-errors"></span>
+                                    @error('phone')
+                                        <span>Error</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -213,6 +219,9 @@
                                     <input type="text" placeholder="Address*" class="form-control" name="address"
                                         id="form-address" required data-msg-required="Address field is required">
                                     <span class="validation-errors"></span>
+                                    @error('address')
+                                        <span>Error</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -221,6 +230,9 @@
                                         name="passing_year" id="form-passing-year" required
                                         data-msg-required="Year of Passing field is required">
                                     <span class="validation-errors"></span>
+                                    @error('passing_year')
+                                        <span>Error</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -229,6 +241,9 @@
                                         name="present_profession" id="form-present-profession" required
                                         data-msg-required="Present Profession field is required">
                                     <span class="validation-errors"></span>
+                                    @error('present_profession')
+                                        <span>Error</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-md-12">
@@ -236,13 +251,26 @@
                                     <button type="submit" class="default-big-btn save_btn">Submit</button>
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-4">
+                            {{-- <div class="col-md-12 mt-4">
                                 <div class="form-group">
                                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                                         <div id="success"></div>
                                         <button type="button" class="btn-close" data-bs-dismiss="alert"
                                             aria-label="Close"></button>
                                     </div>
+                                </div>
+                            </div> --}}
+                            <div class="col-md-12 mt-4">
+                                <div class="form-group">
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-xl-8 col-lg-8 col-md-6 col-md-12">

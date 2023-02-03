@@ -10,7 +10,7 @@ use App\Models\HomePageBanners;
 use App\Models\Notice;
 use App\Models\YearComplete;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Validator;
 class HomeController extends Controller
 {
 
@@ -31,6 +31,35 @@ class HomeController extends Controller
     }
 
     public function exStudentInfoSubmit(Request $request) {
+
+        // $validated = $request->validate([
+        //     'name' => 'required',
+        //     'phone' => 'required',
+        //     'address' => 'required',
+        //     'passing_year' => 'required',
+        //     'present_profession' => 'required',
+        // ]);
+
+        $validator = Validator::make(
+            [
+                'name' => $request->post('name'),
+                'phone' => $request->post('phone'),
+                'address' => $request->post('address'),
+                'passing_year' => $request->post('passing_year'),
+                'present_profession' => $request->post('present_profession'),
+            ],
+            [
+                'name' => 'required',
+                'phone' => 'required',
+                'address' => 'required',
+                'passing_year' => 'required',
+                'present_profession' => 'required',
+            ]
+        );
+
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
         $student = new YearComplete();
 
         $student->name = $request->post('name');
