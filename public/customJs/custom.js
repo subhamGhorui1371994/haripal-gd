@@ -22,36 +22,15 @@ $(document).ready(function() {
             passing_year: "Passing Year Fild is Requird",
             present_profession: "Present Profession Fild is Requird",
         },
-        // submitHandler: function() {
-        //
-        // }
+        submitHandler: function() {
+            submitFrom();
+        }
     })
 
-    $("#completeYear").on('submit', function(e) {
-        e.preventDefault();
 
-        let form_data = $('#completeYear').serializeArray();
-        console.log(form_data);
+});
 
-        // $.ajax({
-        //     url: "complete-year-form-store",
-        //     type: "POST",
-        //     data: form_data,
-        //     dataType: "json",
-        //     beforeSend: function() {
-        //         $(".save_btn").addClass("disabled").text("Loding...");
-        //     },
-        //     success: function(res) {
-        //
-        //         // $(".ajax-res").text("Your form Submit successfully");
-        //         $(".save_btn").removeClass("disabled").text("Submit");
-        //         // $("#admissionForm")[0].reset();
-        //         // alert("Your form Submit successfully");
-        //         $('#success').text('Your form Submit successfully');
-        //     },
-        // });
-    });
-
+function submitFrom() {
     $('#completeYear').on('submit', function(e) {
         e.preventDefault();
         var formData = $('#completeYear').serializeArray();
@@ -63,18 +42,18 @@ $(document).ready(function() {
             success: function(data) {
                 // Do something with the returned data
                 $('#exampleModal').modal('hide');
+                $('#completeYear').trigger("reset");
                 if(data.status) {
                     Swal.fire(
                         'Good job!',
                         data.message,
                         'success'
                     )
-                    //$('#success').text(data.message);
                 }
             }
         });
     });
-});
+}
 
 
 

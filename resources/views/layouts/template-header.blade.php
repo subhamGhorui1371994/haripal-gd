@@ -236,18 +236,7 @@
                                     <button type="submit" class="default-big-btn save_btn">Submit</button>
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-4">
-                                <div class="form-group">
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                        <div id="success"></div>
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-6 col-md-12">
-                                <div class='form-response'></div>
-                            </div>
+
                         </fieldset>
                     </form>
                 </div>
