@@ -89,13 +89,14 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid map-area">
-            <div class="row">
-                <div class="google-map-area">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.6825304751637!2d88.01258655118873!3d22.440971843370914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02854aa4637abb%3A0x2d0096ee43029f4!2sHeritage%20College%20of%20Education%20(B.Ed%20%26%20D.El.Ed)!5e0!3m2!1sen!2sin!4v1644079875065!5m2!1sen!2sin" style="border:0;width:100%; height:500px;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
+        <br>
+{{--        <div class="container-fluid map-area">--}}
+{{--            <div class="row">--}}
+{{--                <div class="google-map-area">--}}
+{{--                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.6825304751637!2d88.01258655118873!3d22.440971843370914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02854aa4637abb%3A0x2d0096ee43029f4!2sHeritage%20College%20of%20Education%20(B.Ed%20%26%20D.El.Ed)!5e0!3m2!1sen!2sin!4v1644079875065!5m2!1sen!2sin" style="border:0;width:100%; height:500px;" allowfullscreen="" loading="lazy"></iframe>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
     <!-- Contact Us Page 1 Area End Here -->
 @endsection
