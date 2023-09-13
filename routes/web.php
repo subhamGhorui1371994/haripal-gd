@@ -60,6 +60,7 @@ Route::get('/admission', [AdmissionController::class, 'index']);
 
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('donation',  [HomeController::class, 'donation']);
 Route::get('courses', [CoursesController::class, 'index']);
 Route::get('gallery', [GalleryController::class, 'index']);
 Route::get('resource-person', [ResourcePersonController::class, 'index']);

@@ -44,4 +44,7 @@ class HomeController extends Controller
         return response()->json(['status'=> true, 'message'=> "Successfully Submitted."]);
     }
 
+    public function donation(Request $request) {
+        return view('pages.donation');
+    }
 }

@@ -111,6 +111,8 @@
                                 </li>
                                 <li class="{{ Request::segment(1) === 'contact' ? 'active' : '' }}"><a
                                         href="{!! url('contact') !!}">Contact</a></li>
+                                <li class="{{ Request::segment(1) === 'donation' ? 'active' : '' }}"><a
+                                        href="{!! url('donation') !!}">Donation</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -126,18 +128,6 @@
                     <div class="mobile-menu">
                         <nav id="dropdown">
                             <ul>
-                                {{--                                <li class="{{Request::segment(1) === null ? 'active' : ''}}"><a href="{!! url('/') !!}">Home</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'courses' ? 'active' : ''}}"><a href="{!! url('/courses') !!}">Courses</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'gallery' ? 'active' : ''}}"><a href="{!! url('/gallery') !!}">Gallery</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'resource-person' ? 'active' : ''}}"><a href="{!! url('resource-person') !!}">Resource Person</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'student-portal' ? 'active' : ''}}"><a href="{!! url('student-portal') !!}">Student Portal</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'infrastructure' ? 'active' : ''}}"><a href="{!! url('infrastructure') !!}">Infrastructure</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'mandatory-disclosure' ? 'active' : ''}}"><a href="{!! url('mandatory-disclosure') !!}">Mandatory Disclosure</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'biometric' ? 'active' : ''}}"><a href="{!! url('biometric') !!}">Biometric Attendance</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'notice' ? 'active' : ''}}"><a href="{!! url('notice') !!}#">Notice</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'events' ? 'active' : ''}}"><a href="{!! url('events') !!}#">Event</a></li> --}}
-                                {{--                                <li class="{{Request::segment(1) === 'contact' ? 'active' : ''}}"><a href="{!! url('contact') !!}">Contact</a></li> --}}
-
                                 <li class="{{ Request::segment(1) === null ? 'active' : '' }}"><a
                                         href="{!! url('/') !!}">Home</a></li>
                                 <li class="{{ Request::segment(1) === 'history' ? 'active' : '' }}"><a
@@ -162,6 +152,8 @@
                                         href="{!! url('events') !!}#">Event</a></li>
                                 <li class="{{ Request::segment(1) === 'contact' ? 'active' : '' }}"><a
                                         href="{!! url('contact') !!}">Contact</a></li>
+                                <li class="{{ Request::segment(1) === 'donation' ? 'active' : '' }}"><a
+                                        href="{!! url('donation') !!}">Donation</a></li>
 
                             </ul>
                         </nav>
@@ -235,18 +227,6 @@
                                 <div class="form-group margin-bottom-none">
                                     <button type="submit" class="default-big-btn save_btn">Submit</button>
                                 </div>
-                            </div>
-                            <div class="col-md-12 mt-4">
-                                <div class="form-group">
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                        <div id="success"></div>
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                            aria-label="Close"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-6 col-md-12">
-                                <div class='form-response'></div>
                             </div>
                         </fieldset>
                     </form>

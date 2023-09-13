@@ -50,7 +50,7 @@
                                 <fieldset>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <input type="text" placeholder="Name*" class="form-control" name="name" id="form-name" required data-msg-required="Name field is required">
+                                            <input type="text" placeholder="Name*" class="form-control" name="name" id="name" required data-msg-required="Name field is required">
                                             <span class="validation-errors"></span>
                                         </div>
                                     </div>
@@ -63,7 +63,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input type="text" placeholder="Phone Number*" class="form-control" name="phone" id="form-phone" required data-msg-required="Phone number field is required">
+                                                <input type="text" placeholder="Phone Number*" class="form-control" name="phone" id="phone" required data-msg-required="Phone number field is required">
                                                 <span class="validation-errors"></span>
                                             </div>
                                         </div>
@@ -143,9 +143,9 @@
                             url: base_url + '/contact/submit-request',
                             type: 'POST',
                             data: {
-                                'name': $('#form-name').val(),
+                                'name': $('#name').val(),
                                 'email': $('#form-email').val(),
-                                'mobile': $('#form-phone').val(),
+                                'mobile': $('#phone').val(),
                                 'message': $('#form-message').val(),
                             },
                             headers: {'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')},
