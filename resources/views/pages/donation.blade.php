@@ -8,11 +8,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex flex-column align-items-center">
-                    <h1 class="text-center">UPI Details</h1>
-                    <h3 class="text-center">haripalgf125@indianbk</h3>
-                    <h1 class="text-center">QR</h1>
+                    <h2 class="text-center">১২৫বছর  উদযাপন উপলক্ষে donation এর টাকা এই account এ জমা করা যাবে।</h2>
+                    <h4 class="text-center">হরিপাল গুরুদয়াল ইনস্টিটিউশন এর ১২৫বছর  উদযাপন উপলক্ষে যে ব্যাংক account খোলা হয়েছে তার details নিচে দেওয়া হলো :</h4>
+                    <h3 class="text-center">Bank Details</h3>
+                    <h5 class="text-center mt-2">BANK NAME:  Indian Bank<br>
+                        Branch Name:Haripal<br>
+                        Account Number: 7560326933<br>
+                        IFSC: IDIB000H545</h5>
+                    <h2 class="text-center">QR</h2>
                     <img src="{{ URL::asset('assets/img/upi.jpeg') }}" alt="upi" style="max-height: 600px; max-width: 400px; display: flex;justify-content: center;align-items: center;">
-                    <h5 class="text-center mt-2">After make a donation please whatsapp the screenshot to 9046078057 with your name.</h5>
+                    <h5 class="text-center mt-2">After make a donation please whatsapp the screenshot to 9433128188 with your name.</h5>
                 </div>
             </div>
         </div>
