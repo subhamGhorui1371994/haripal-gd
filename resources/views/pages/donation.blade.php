@@ -17,11 +17,18 @@
                         IFSC: IDIB000H545</h5>
                     <h2 class="text-center">QR</h2>
                     <img src="{{ URL::asset('assets/img/upi.jpeg') }}" alt="upi" style="max-height: 600px; max-width: 400px; display: flex;justify-content: center;align-items: center;">
-                    <h5 class="text-center mt-2">After make a donation please whatsapp the screenshot to 9433128188 with your name.</h5>
+                    <h4 class="text-center mt-2">After make a donation please whatsapp the screenshot to 9433128188 with your name.    <a href="https://api.whatsapp.com/send?phone=919433128188&text=Hi, I am "
+                                                                                                                                          target="_blank">
+                            <i class="fa fa-whatsapp wp-my-float"></i>
+                        </a></h4>
                 </div>
             </div>
         </div>
     </div>
+@endsection
+
+@section('content')
+
 @endsection
 
 

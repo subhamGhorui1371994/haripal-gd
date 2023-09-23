@@ -9,7 +9,7 @@
                             <ul>
                                 {{--                                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="Tel:{{$siteSettings->phone ?? '+ 123 456 78910'}}"> {{$siteSettings->phone ?? '+ 123 456 78910'}} </a></li> --}}
                                 <li><i class="fa fa-envelope" aria-hidden="true"></i><a
-                                        href="mailto:{{ $siteSettings->email ?? 'bagnanheritage@gmail.com' }}">{{ $siteSettings->email ?? 'bagnanheritage@gmail.com' }}</a>
+                                        href="mailto:{{ $siteSettings->email ?? 'haripalgdinstitution@gmail.com' }}">{{ $siteSettings->email ?? 'haripalgdinstitution@gmail.com' }}</a>
                                 </li>
                             </ul>
                         </div>
